@@ -33,20 +33,20 @@ export const Countdown: React.FC<CountdownProps> = ({ lang }) => {
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="w-full bg-white/10 border border-white rounded-[20px] p-8 md:px-[60px] md:py-6 flex flex-col md:flex-row items-center justify-between gap-12 shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] backdrop-blur-sm"
+        className="w-full bg-[rgba(255,255,255,0.14)] md:bg-white/10 border border-white rounded-[8px] md:rounded-[20px] py-[10px] px-4 md:px-[60px] md:py-6 flex flex-col md:flex-row items-center justify-between gap-10 md:gap-12 shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] backdrop-blur-sm"
       >
         {/* Timer Part */}
-        <div className="flex gap-12 items-start text-white">
+        <div className="flex gap-[29px] md:gap-12 items-start justify-center w-full md:w-auto text-white">
           {[
             { label: t.days, value: timeLeft.days },
             { label: t.hours, value: timeLeft.hours },
             { label: t.minutes, value: timeLeft.minutes },
           ].map((item, i) => (
-            <div key={i} className="flex flex-col items-center gap-2">
-              <span className="text-4xl md:text-[40px] font-semibold leading-[48px]">
+            <div key={i} className="flex flex-col items-center gap-[10px]">
+              <span className="text-[40px] md:text-[40px] font-semibold leading-none">
                 {String(item.value).padStart(2, "0")}
               </span>
-              <span className="text-lg md:text-[20px] font-normal font-inter">
+              <span className="text-[20px] md:text-[20px] font-normal font-inter">
                 {item.label}
               </span>
             </div>

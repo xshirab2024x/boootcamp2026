@@ -39,17 +39,17 @@ export const Reasons: React.FC<ReasonsProps> = ({ lang }) => {
   ];
 
   return (
-    <section className="w-full flex flex-col gap-10 items-center py-20" data-name="Razones">
+    <section className="w-full flex flex-col gap-[21px] md:gap-10 items-center py-0 md:py-20" data-name="Razones">
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="text-4xl md:text-[40px] font-bold text-white text-center uppercase"
+        className="text-[24px] md:text-[40px] font-semibold md:font-bold text-white text-center uppercase leading-[28px] md:leading-normal"
       >
         {t.title}
       </motion.h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-[1168px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[24px] md:gap-6 w-full max-w-[1168px]">
         {reasons.map((reason, i) => (
           <motion.div
             key={i}
@@ -68,10 +68,10 @@ export const Reasons: React.FC<ReasonsProps> = ({ lang }) => {
             <div className="w-full h-px bg-white/10 my-2" />
 
             <div className="flex flex-col gap-2">
-              <h3 className="text-xl md:text-[20px] font-bold text-white leading-[1.2]">
+              <h3 className="text-[16px] md:text-[20px] font-bold text-white leading-[1.2]">
                 {reason.title}
               </h3>
-              <p className="text-sm md:text-[16px] text-white/60 leading-[24px]">
+              <p className="text-[16px] md:text-[16px] text-white/80 md:text-white/60 leading-[24px]">
                 {reason.description}
               </p>
             </div>

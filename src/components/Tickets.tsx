@@ -62,7 +62,7 @@ export const Tickets: React.FC<TicketsProps> = ({ lang }) => {
         className="absolute pointer-events-none overflow-hidden"
         style={{
           left: "50%",
-          top: "-117px",
+          top: "40px",
           transform: "translateX(calc(-50% - 11.85px))",
           width: "2224.31px",
           height: "1356.141px",
@@ -84,12 +84,12 @@ export const Tickets: React.FC<TicketsProps> = ({ lang }) => {
         </div>
       </div>
 
-      <div className="relative z-10 flex flex-col gap-3 items-center text-center max-w-[819px]">
+      <div className="relative z-10 flex flex-col gap-[12px] md:gap-3 items-center text-center max-w-[819px]">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-4xl md:text-[44px] font-bold text-white uppercase"
+          className="text-[24px] md:text-[44px] font-bold text-white uppercase leading-[28px] md:leading-normal"
         >
           {t.title}
         </motion.h2>
@@ -98,13 +98,13 @@ export const Tickets: React.FC<TicketsProps> = ({ lang }) => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}
-          className="text-lg md:text-[20px] font-normal text-white/80 leading-[28px]"
+          className="text-[16px] md:text-[20px] font-normal text-white md:text-white/80 leading-[24px] md:leading-[28px]"
         >
           {t.subtitle}
         </motion.p>
       </div>
 
-      <div className="relative z-10 flex flex-col md:flex-row gap-6 w-full justify-center items-stretch">
+      <div className="relative z-10 flex flex-col md:flex-row gap-[24px] md:gap-6 w-full justify-center items-stretch mt-[24px] md:mt-0">
         {tickets.map((ticket, i) => (
           <motion.div
             key={i}
@@ -112,15 +112,15 @@ export const Tickets: React.FC<TicketsProps> = ({ lang }) => {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.1 }}
-            className="flex flex-col gap-6 items-center flex-1 max-w-[373px]"
+            className="flex flex-col gap-[24px] md:gap-6 items-center flex-1 max-w-full md:max-w-[373px] w-full"
           >
-            <div className="h-[80px] flex items-center justify-center w-full">
-              <h3 className="text-3xl md:text-[32px] font-bold text-center leading-tight" style={{ color: ticket.theme }}>
+            <div className="h-auto md:h-[80px] flex items-center justify-center w-full">
+              <h3 className="text-[32px] md:text-[32px] font-bold text-center leading-[40px] md:leading-tight" style={{ color: ticket.theme }}>
                 {ticket.type}
               </h3>
             </div>
 
-            <div className={`w-full h-full flex flex-col gap-8 items-center p-8 rounded-[22px] border-2 ${ticket.border} bg-black/35 backdrop-blur-[80px] shadow-2xl relative overflow-hidden group`}>
+            <div className={`w-full h-full flex flex-col gap-[32px] md:gap-8 items-center px-4 py-8 md:p-8 rounded-[22px] border-2 ${ticket.border} bg-black/35 backdrop-blur-[80px] shadow-2xl relative overflow-hidden group`}>
               {/* Glow effect */}
               <div className="absolute top-0 left-1/2 -translate-x-1/2 w-40 h-40 rounded-full blur-[100px] opacity-20 transition-opacity duration-500 group-hover:opacity-40" style={{ backgroundColor: ticket.theme }} />
 

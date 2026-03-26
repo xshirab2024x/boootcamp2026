@@ -17,7 +17,7 @@ export const Footer: React.FC<FooterProps> = ({ lang }) => {
 
   return (
     <footer className="w-full border-t border-white/10 pt-20 pb-10 bg-black relative" data-name="Footer">
-      <div className="max-w-[1440px] mx-auto px-6 md:px-[136px] flex flex-col gap-12">
+      <div className="max-w-[1440px] mx-auto px-4 md:px-[136px] flex flex-col gap-12">
         <div className="flex flex-col md:flex-row justify-between items-start gap-12">
           {/* Logo & Info */}
           <div className="flex flex-col gap-6 max-w-[300px]">

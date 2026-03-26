@@ -36,8 +36,8 @@ const TESTIMONIALS = [
 // Duplicate for infinite loop
 const ALL = [...TESTIMONIALS, ...TESTIMONIALS, ...TESTIMONIALS];
 
-const CARD_W = 410;   // px - matches Figma w-[410px]
-const GAP = 38;       // px - matches Figma gap-[38px]
+const CARD_W = 320;   // px - made smaller for mobile
+const GAP = 24;       // px - smaller gap
 const STEP = CARD_W + GAP; // total per card
 const LOOP_WIDTH = TESTIMONIALS.length * STEP;
 
@@ -81,12 +81,12 @@ export const Testimonials: React.FC<TestimonialsProps> = ({ lang }) => {
       className="w-full flex flex-col gap-[60px] items-center py-20"
       data-name="testimonios"
     >
-      {/* Title — Figma: uppercase, 40px bold, center */}
+      {/* Title — Figma: uppercase, 24px/40px bold, center */}
       <motion.p
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="font-bold text-[40px] text-center text-white uppercase"
+        className="font-bold text-[24px] md:text-[40px] leading-[28px] md:leading-normal text-center text-white uppercase px-4"
       >
         {t.title}
       </motion.p>

@@ -20,17 +20,17 @@ export const Sponsors: React.FC<SponsorsProps> = ({ lang }) => {
 
   return (
     <section className="bg-gradient-to-r from-accent-blue-dark to-primary-blue py-16 px-6">
-      <div className="max-w-7xl mx-auto flex flex-col gap-12 items-center">
+      <div className="max-w-7xl mx-auto flex flex-col gap-8 md:gap-12 items-center">
         <motion.h2
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="text-2xl md:text-3xl font-bold text-white tracking-[0.2em]"
+          className="text-[20px] md:text-3xl font-bold text-white tracking-[0.2em] text-center"
         >
           {t.title}
         </motion.h2>
 
-        <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24 grayscale brightness-200">
+        <div className="flex flex-wrap justify-center items-center gap-8 md:gap-24 grayscale brightness-200">
           {LOGOS.map((logo, i) => (
             <motion.div
               key={i}

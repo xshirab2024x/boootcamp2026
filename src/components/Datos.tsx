@@ -17,7 +17,7 @@ export const Datos: React.FC<DatosProps> = ({ lang }) => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-[40px] font-bold text-white uppercase leading-[1.2] md:leading-[1.2]"
+            className="text-[24px] md:text-[40px] font-bold text-white uppercase leading-[28px] md:leading-[1.2]"
           >
             ¿Sabías que el aprendizaje digital<br className="hidden md:block"/> es más eficaz que el tradicional?
           </motion.h2>
@@ -26,42 +26,42 @@ export const Datos: React.FC<DatosProps> = ({ lang }) => {
              whileInView={{ opacity: 1, y: 0 }}
              viewport={{ once: true }}
              transition={{ delay: 0.1 }}
-             className="text-base md:text-[20px] font-normal text-white/90 leading-relaxed max-w-[841px]"
+             className="text-[16px] md:text-[20px] font-normal text-white/90 leading-[24px] md:leading-relaxed max-w-[841px]"
           >
-            Este evento educativo es la puerta a tu transformación. Es tu oportunidad de obtener conocimientos prácticos, que podrás aplicar desde el primer día, sin perder tiempo ni recursos
+            Este evento educativo es la puerta a tu transformación. Es tu oportunidad de obtener conocimientos prácticos, que podrás aplicar desde el primer día, sin perder tiempo ni recursos.
           </motion.p>
         </div>
         
         <div className="flex flex-col md:flex-row gap-8 md:gap-4 items-center justify-center relative w-full mt-4">
           <motion.div 
-             initial={{ opacity: 0, x: -20 }}
-             whileInView={{ opacity: 1, x: 0 }}
+             initial={{ opacity: 0, y: 20 }}
+             whileInView={{ opacity: 1, y: 0 }}
              viewport={{ once: true }}
              transition={{ delay: 0.2 }}
              className="flex flex-col gap-2 items-center justify-center p-2 text-center w-full md:w-[309px]"
           >
-            <span className="font-bold text-6xl md:text-[72px] text-[#00bb98] leading-none md:leading-[80px]">
+            <span className="font-bold text-[72px] md:text-[72px] text-[#00bb98] leading-[80px] md:leading-[80px]">
               17%
             </span>
-            <span className="font-normal text-lg md:text-[20px] text-white">
+            <span className="font-normal text-[20px] md:text-[20px] text-white">
               más eficaz
             </span>
           </motion.div>
 
           <div className="hidden md:flex h-[134px] w-px bg-white/20 self-center shrink-0"></div>
-          <div className="flex md:hidden w-full max-w-[200px] h-px bg-white/20 self-center shrink-0"></div>
+          <div className="flex md:hidden w-full max-w-[200px] h-px bg-white/20 self-center shrink-0 my-4 md:my-0"></div>
 
           <motion.div 
-             initial={{ opacity: 0, x: 20 }}
-             whileInView={{ opacity: 1, x: 0 }}
+             initial={{ opacity: 0, y: 20 }}
+             whileInView={{ opacity: 1, y: 0 }}
              viewport={{ once: true }}
              transition={{ delay: 0.3 }}
              className="flex flex-col gap-2 items-center justify-center p-2 text-center w-full md:w-[309px]"
           >
-            <span className="font-bold text-6xl md:text-[72px] text-[#00bb98] leading-none md:leading-[80px]">
+            <span className="font-bold text-[72px] md:text-[72px] text-[#00bb98] leading-[80px] md:leading-[80px]">
               60%
             </span>
-            <span className="font-normal text-lg md:text-[20px] text-white">
+            <span className="font-normal text-[20px] md:text-[20px] text-white">
               más retención
             </span>
           </motion.div>
