@@ -24,7 +24,7 @@ export const Header: React.FC = () => {
           justifyContent: "center",
         }}
       >
-        <div style={{ transform: "rotate(51.39deg)", width: "1734px", height: "975px", position: "absolute", right: "-180px" }}>
+        <div style={{ transform: "rotate(51.39deg)", width: "1732px", height: "975px", position: "absolute", right: "-180px" }}>
           <img
             src={ASSETS.background}
             alt=""
