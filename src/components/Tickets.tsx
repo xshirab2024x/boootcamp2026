@@ -59,7 +59,7 @@ export const Tickets: React.FC<TicketsProps> = ({ lang }) => {
     <section className="w-full flex flex-col gap-10 items-center py-20 relative" data-name="precios">
       {/* Figma Background — rotate-[-165.59deg] skew-x-[1.87deg], centered behind section */}
       <div
-        className="absolute pointer-events-none overflow-hidden top-1/2 md:top-[40px] left-1/2 -translate-x-1/2 -translate-y-1/2 md:translate-y-0"
+        className="absolute pointer-events-none overflow-hidden top-1/2 md:top-[40px] left-1/2 -translate-x-1/2 -translate-y-1/2 md:translate-y-0 opacity-40 md:opacity-100"
         style={{
           width: "2224.31px",
           height: "1356.141px",
@@ -112,7 +112,7 @@ export const Tickets: React.FC<TicketsProps> = ({ lang }) => {
             className="flex flex-col gap-[24px] md:gap-6 items-center flex-1 max-w-full md:max-w-[373px] w-full"
           >
             <div className="h-auto md:h-[80px] flex items-center justify-center w-full">
-              <h3 className="text-[32px] md:text-[32px] font-bold text-center leading-[40px] md:leading-tight" style={{ color: ticket.theme }}>
+              <h3 className="text-[32px] md:text-[32px] font-bold text-center leading-[40px] md:leading-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)]" style={{ color: ticket.theme }}>
                 {ticket.type}
               </h3>
             </div>
