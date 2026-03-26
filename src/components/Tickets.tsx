@@ -59,11 +59,8 @@ export const Tickets: React.FC<TicketsProps> = ({ lang }) => {
     <section className="w-full flex flex-col gap-10 items-center py-20 relative" data-name="precios">
       {/* Figma Background — rotate-[-165.59deg] skew-x-[1.87deg], centered behind section */}
       <div
-        className="absolute pointer-events-none overflow-hidden"
+        className="absolute pointer-events-none overflow-hidden top-1/2 md:top-[40px] left-1/2 -translate-x-1/2 -translate-y-1/2 md:translate-y-0"
         style={{
-          left: "50%",
-          top: "40px",
-          transform: "translateX(calc(-50% - 11.85px))",
           width: "2224.31px",
           height: "1356.141px",
           display: "flex",
