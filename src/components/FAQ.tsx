@@ -43,7 +43,7 @@ export const FAQ: React.FC = () => {
 
   return (
     <section
-      className="w-full flex flex-col gap-[40px] items-center px-[136px] py-[64px] relative"
+      className="w-full flex flex-col gap-[40px] items-center px-4 md:px-[136px] py-[64px] relative"
       data-name="preguntas frecuentes"
     >
       {/* Background image — Figma: opacity-5, covers entire section */}
@@ -58,7 +58,7 @@ export const FAQ: React.FC = () => {
 
       {/* Title */}
       <div className="relative z-10 flex items-center justify-center">
-        <p className="font-bold text-[40px] text-center text-white uppercase w-[559px] leading-[1.208]">
+        <p className="font-bold text-[24px] text-center text-white uppercase w-[559px] leading-[1.208]">
           Preguntas frecuentes
         </p>
       </div>
